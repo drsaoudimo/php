@@ -25,6 +25,5 @@ RUN apt-get install -y apache2 lynx
 # means README/editor config/etc are out of the html folder!
 RUN mkdir /app || echo "/app exists!"
 RUN mkdir /app/src || echo "/app/src exists!"
-RUN dpkg /src/duhokforum2.1.zip
 
 CMD apache2ctl start && sleep infinity;
